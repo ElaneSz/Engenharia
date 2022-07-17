@@ -4,17 +4,37 @@
 
 body {
     margin: 0;
-    color: #D8BFD8;
-    background-color: #D8BFD8;
+    color: #d8cdbf;
+    background-color: #f7dada;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-form {
-    border: 10px solid #FF4040;
-    padding: 30px;
+
+.Principal{
+    display: grid;
+    background-color: #f89292;
     border-radius: 25px;
+    height: 500px;
+    border: solid #d5362e 2px;
+    grid-template-columns: 500px 400px;
+}
+
+form {
+    background-color: #f7b0b0;
+    padding: 30px;
+    border-radius: 24px;
+    padding-top: 50px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    border: solid #e96d6d 2px;
+    border-style: inset;
+    border-radius: 5px;
 }
 
 form input {
@@ -31,22 +51,18 @@ form > div:last-of-type {
     justify-content: flex-end;
 }
 
-#titulo {
-    font-family: sans-serif;
-    color: #FF4040;
-}
-
-input, button, label, a {
+input, button, label, a, h3 {
     font-family: sans-serif;
     font-size: 1em;
-    color: #FF4040;
+    color: #d5362e;
     border-radius: 5px;
     
 }
 
 button {
-    margin-left: 100px;
-    background: #FF4040;
+    margin-top: 15px;
+    margin-left: 135px;
+    background: #d5362e;
     border: 0;
     color: white;
     padding: 0.2em 0.6em;
@@ -55,17 +71,30 @@ button {
 }
 
 button:hover {
-    background: #FF4040;
+    background: #e65858;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
 }
 
-img {
-width: 200px;
+.cadastro{
+    display: grid;
+    margin-right: 195px;
+    margin-top: 100px;
 }
 
+.Informacoes{
+    grid-template-columns: 100px 100px 100px 100px;
+}
 
-.cadastro{
-    display: flexbox;
-    align-items: center;
-    
+.Imagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.inserir{
+    margin-top: 50px;
+}
+
+.campo{
+    margin-top: 20px;
 }
