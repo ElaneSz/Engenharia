@@ -28,61 +28,66 @@ body {
   gap: 32px;
 }
 
-.cabecalho-menu-item {
-  font-family: 'Sarala', sans-serif;
-  color: #FFF2E7;
-  font-weight: 400;
-  font-size: 18px
-}
-
 #divBusca{
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
+    background-color:#ffffff;
+    border:solid 2px #ec8d8d;
     border-radius:10px;
-    width:300px;
-    height:32px;
-  }
+    width:900px;
+    height: 37px;
+    border-style: inset;
+    color: #000000;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 1em;
+}
   
-  #txtBusca{
+#txtBusca{
     float:left;
     background-color:transparent;
-    padding-left:5px;
-    font-size:18px;
     border:none;
     height:32px;
-    width:191px;
-  }
-  
-  #btnBusca{
+    width:965px;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+#btnBusca{
     border:none;
     float:left;
-    height:32px;
+    height:33px;
     border-radius:0 7px 7px 0;
     width:70px;
-    font-weight:bold;
-    background:#5F9EA0;
-  }
+    background:#e96d6d;
+    margin-top: 0px;
+}
   
-  #divBusca img{
+#divBusca img{
     float:left;
-  }
+    height: 30px;
+    width: 30px;
+}
 
-.conteudo-principal{
-    display: flex;
-    border-radius: 25px;
-    float: right;
-    border: solid black 2px;
+.conteudo{
+    display: grid;
+    grid-template-areas: none;
+    grid-template-areas: "menu produtos conteudo-principal";
+    
 }
 
 form {
-    background-color: #f7b0b0;
+    background-color: rgb(253, 147, 147);
     padding: 30px;
     border-radius: 24px;
     padding-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 0px;
 }
 
 .titulo{
     display: flex;
+    background-color: #ffffff;
     justify-content: center;
     margin-top: auto;
     border: solid #e96d6d 2px;
@@ -107,7 +112,7 @@ form > div:last-of-type {
 input, button, label, a, h3 {
     font-family: sans-serif;
     font-size: 1em;
-    color: #d5362e;
+    color: #aa433e;
     border-radius: 5px;
     
 }
@@ -150,4 +155,68 @@ button:hover {
 
 .campo{
     margin-top: 20px;
+}
+
+.menu{
+    border: solid black 2px;
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+    width: 150px;
+    height: 96%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.produtos{
+    border: solid green 3px;
+    width: 700px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.catalogo{
+    border: solid saddlebrown 3px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 5px;
+}
+
+.img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: double #aa433e 2px;
+}
+
+.itens{
+    border: solid darkblue 3px;
+    display: grid;
+    justify-content: center;
+}
+
+.rodape{
+    border: solid firebrick 3px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.meio{
+    border-bottom: 0.4px solid #FFF2E7;
 }
